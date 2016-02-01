@@ -1,0 +1,183 @@
+Key,Description,Standard,EN
+SAY.f4-fiume.1.Lili la pecora,,nel fiume\n,in the river
+SAY.f4-fiume.13.Gigi la trota,,ciao. {w}io sono Gigi la trota{w} e ho paura di morire.,Hi. I'm Gigi the fish and i fear to die
+SAY.f4-fiume.10.Koko il koala,,ossignur che schiettezza{w} vai subito al sodo tu eh,damn how direct you are! You don't loose time eh
+SAY.f4-fiume.18.Gigo il cinghiale,,tutti dobbiamo morire,all we must die
+SAY.f4-fiume.40.Lili la pecora,,vero! non c'è niente di più naturale! {w},true! Nothing is more natural than that!
+SAY.f4-fiume.17.Gigi la trota,,"si, ma non mangiati!... tutti i giorni sognamo quel maledetto giorno!","yes, but not eaten by something!… we have that nightmare every day!"
+SAY.f4-fiume.16.Lili la pecora,,e come mai potremmo aiutarti?,yes! Nothing is more real than to die.
+SAY.f4-fiume.39.Gigi la trota,,non voglio più rimanere qui... posso venire con voi?,i don't want to stay here anymore… can i come with you?
+SAY.f4-fiume.12.Lili la pecora,,finché siamo vicini all'acqua ci potresti seguire... ma quando saremo sulla  terra?,
+SAY.f4-fiume.9.Gigi la trota,,esistono dei recipienti per l'acqua che potrebbero contenermi.. come le vostre tute spaziali!,
+SAY.f4-fiume.11.Gigo il cinghiale,,"ehi amici, facendo pipì ho trovato questo secchiello... credo possa andare bene",
+SAY.f4-fiume.19.Gigi la trota,,è perfetto!... MI CI POSSO TUFFARE DENTRO? ... vi prego.. non voglio stare qui ad aspettare di morire,
+SAY.f4-fiume.23.Gigi la trota,,voglio esplorare il mondo!... conoscere posti nuovi.. tutta la gente (ehhh animali) più simpatica!,
+MENU.f4-fiume.24,,ma certo!,sure!
+MENU.f4-fiume.25,,mah noi ti vorremmo mangiare!,but we'd like to eat you!
+SAY.f4-fiume.31.Gigi la trota,,grazie amici! {w} da ora verrò con voi!,thanks dears!… i'll go with you
+SAY.f4-fiume.36.Gigi la trota,,MA...MA... DAVVERO?,BUT...BUT… REALLY?
+SAY.f4-fiume.35.Gigo il cinghiale,,a me piace molto il pesce,i love fish
+SAY.f4-fiume.37.Lili la pecora,,ma dai che scherziamo!... certo che puoi venire con noi! ... abbiamo anche il secchiello!,
+SAY.f7-isola.1.Lili la pecora,,sull'isola!,
+SAY.f7-isola.8.Rulo l'orso,,sono Rulo.. e sono triste,
+SAY.f7-isola.15.Lili la pecora,,perché?,
+SAY.f7-isola.27.Rulo l'orso,,la mia amica Giom mi ha rotto il mio giocattolo preferito (una macchinina),
+SAY.f7-isola.28.Rulo l'orso,,e da allora non ho pace,
+SAY.f7-isola.29.Giom la balena,,ti chiedo scusa per l'incidente,
+SAY.f7-isola.30.Rulo l'orso,,scuse accettate... ma non farà tornare la mia macchinina,
+SAY.f7-isola.31.Lili la pecora,,il mio papà mi ha insegnato che tutto si aggiusta!... ti aiuteremo noi!,
+SAY.f7-isola.32.Nico il cervo,,ho trovato un cacciavite,
+SAY.f7-isola.33.Gigo il cinghiale,,io della colla,
+SAY.f7-isola.34.Gigi la trota,,io vedo un  secchiello di colla (è simile al mio!),
+SAY.f7-isola.35.Lili la pecora,,ottimo.. al lavoro!,
+SAY.f7-isola.36.Rulo l'orso,,ragazzi siete fantastici! ... ora manca solo la pallina rossa che è incastrata lassù!... come la recuperiamo?,
+SAY.f7-isola.19.,,devo spingere verso A o tirare verso B per riprendermi la pallina rossa?,
+SAY.f7-isola.12.Rulo l'orso,,fantastico amici! {w}non pensavo che tutto potessi aggiustarsi!,
+SAY.f7-isola.13.Rulo l'orso,,verrò con voi... dove si va?,
+SAY.f7-isola.37.Lili la pecora,,ho la strana sensazioen che dovremo andare in alto...,
+SAY.f7-isola.38.Nico il cervo,,ossignur!,
+SAY.f7-isola.39.Giom la balena,,anch'io?!?!,
+SAY.f7-isola.40.Koko il koala,,non ho più paura di niente!,
+SAY.f7-isola.24.Rulo l'orso,,NOOOOOOO... ora la mia tristezza è infinita... ma credo che potremo rimediare un'altra volta!,
+SAY.f6-mare.95.Giom la balena,,salite in groppa! ... SI PARTEEEE,
+SAY.f6-mare.96.Koko il koala,,non ho mai cavalcato niente.. figuriamoci una balena,
+SAY.f6-mare.10.Lili la pecora,,il mare! {w}finalmente!,
+SAY.f6-mare.9.Giom la balena,,ahhhhhhhhhhhhhh,
+SAY.f6-mare.25.Lili la pecora,,chi sei? perché piangi?,
+SAY.f6-mare.12.Giom la balena,,sono stata sbadata... e ho fatto arrabbiare il mio migliore amico... poi sono scappata...,
+SAY.f6-mare.78.Gigi la trota,,da pesce a pesce (lo sei sei un mammifero)... niente è irrimediabile...,
+SAY.f6-mare.79.Nico il cervo,,già.. perchè non trovi il lato positivo di questa cosa?,
+SAY.f6-mare.77.Giom la balena,,?? cosa potrei fare?....,
+SAY.f6-mare.81.Gigo il cinghiale,,chiamarlo!,
+SAY.f6-mare.82.Koko il koala,,o tornare da lui!,
+SAY.f6-mare.80.Giom la balena,,ho perso i pezzi della mappa per tornare a casa.. mi sono persa...,
+MENU.f6-mare.83,,certo che ti aiutiamo noi!,
+MENU.f6-mare.85,,bah.. potresti anche fare da te1,
+SAY.f6-mare.84.Giom la balena,,la mappa è andata rotta in 11 pezzi.. mi aiutate a ritrovarli?,
+SAY.f6-mare.18.Giom la balena,,SIII! abbiamo {$mapPieces} pezzi della mappa!,
+SAY.f6-mare.57.Giom la balena,,"vi ringrazio molto, amici",
+SAY.f6-mare.58.Giom la balena,,ora posso adnare a ritrovare il mio amico Rulo e riappacificarmi.,
+SAY.f6-mare.89.Giom la balena,,andiamo tutti assieme?,
+MENU.f6-mare.90,,certamente!,
+MENU.f6-mare.91,,veramente avremmo altri programmi...,
+SAY.f6-mare.87.Giom la balena,,ok farò da me.. rimarrò qui... addio.,
+SAY.f6-mare.93.Giom la balena,,peccato... addio!,
+SAY.f8-nuvole.8.Lili la pecora,,ahhh siamo arrivati sulle nuvole!! ... come sono morbide!,
+SAY.f8-nuvole.10.Lili la pecora,,e tu chi sei?,
+SAY.f8-nuvole.11.Poso il panda,,sono Poso il Panda... e sono salito quassù perchè non ha più nulla per cui vivere sulla terra,
+SAY.f8-nuvole.12.Gigi la trota,,tutti allegri i tuoi amici eh!,
+SAY.f8-nuvole.13.Poso il panda,,nel mondo non c'è più armonia.. ognuno pensa solo a sé stesso...,
+SAY.f8-nuvole.14.Poso il panda,,se solo trovassi dell'armonia,
+SAY.f8-nuvole.15.Lili la pecora,,PROVIAMOCI!!!,
+MENU.f8-nuvole.16,,cantiamo tutti in coro la stessa nota,
+MENU.f8-nuvole.21,,siamo stonati,
+SAY.f8-nuvole.18.Poso il panda,,che squadra ragazzi! torniamo giù!,
+SAY.f8-nuvole.22.Lili la pecora,,niente.. pensavo fossimo un po' intonabili...,
+SAY.f10 - credits.1.,,"Hai giocato a NON SONO SOLO UNA PECORA {w}il primo gioco scritto da Fabio ""Lili"" Cecere {e}e prodotto insieme al suo papà Stefano ""Cecio"" Cecere",you played I'M NOT JUST A SHEEP… the first game written by Fabio “Lili” Cecere {e}and developed with his dad Stefano “Cecio” Cecere
+SAY.f10 - credits.2.,,durante la Global Game Jam 2016 a Pisa.,at the Global Game Jam 2016 in Pisa (Italy)
+SAY.f10 - credits.3.,,grazie e speriamo ti sia piaciuto!,thank you and we hope you liked it!
+SAY.f9-finale.14.Lili la pecora,,Non ci posso credere... sono tornata a casa!... e con tutti voi!,I can't belive… i'm back home!… and with you all!
+SAY.f9-finale.6.Gigo il cinghiale,,"e abbiamo imparato a non temere, ma aiutare gli altri!",
+SAY.f9-finale.8.Koko il koala,,a non vergonarci  e non essere timidi  nello stare con gli altri!,
+SAY.f9-finale.9.Gigi la trota,,a decidere come vogliamo vivere la nostra vita,
+SAY.f9-finale.10.Nico il cervo,,a sentirci a nostro agio ovunque siamo,
+SAY.f9-finale.11.Giom la balena,,ad ammettere i nostri errori e chiedere scusa,
+SAY.f9-finale.12.Rulo l'orso,,"a costruire e aggiustare, non distruggere e buttare via",
+SAY.f9-finale.13.Poso il panda,,a continuare a cercare il senso della vita giocando con gli altri!,
+SAY.f9-finale.7.Lili la pecora,,ora mi sento davvero cresciuta!... più grande... ma dentro!,
+SAY.f9-finale.15.Lili la pecora,,grazie! ... vi porterò sempre nel mio cuore... ora vado a fare colazione.,
+SAY.f5-spiaggia.11.Lili la pecora,,ahhh la spiaggia.. il mare... spero di tornarci più spesso in futuro!,
+SAY.f5-spiaggia.41.Gigi la trota,,da qua dentro non vedo niente.. non c'è un secchiello trasparente?,
+SAY.f5-spiaggia.40.Gigo il cinghiale,,non so se mi piace.. ci devo stare un po',
+SAY.f5-spiaggia.42.Koko il koala,,io non ho mai lasciato la mia capanna.. {w} che bello scoprire nuovi posti,
+SAY.f5-spiaggia.39.Nico il cervo,,io invece non mi trovo a mio agio,
+SAY.f5-spiaggia.38.Lili la pecora,,perché? ti sei perso?,
+SAY.f5-spiaggia.9.Nico il cervo,,un po'...  non ho più una casa... sono sempre in giro... e non sto bene da nessuna parte...,
+SAY.f5-spiaggia.12.Gigo il cinghiale,,hai mangiato il tuo cibo preferito?,
+SAY.f5-spiaggia.10.Gigi la trota,,hai uno strumento che ti dia la direzione più interessante?,
+SAY.f5-spiaggia.13.Koko il koala,,perchè non ti prendi un telefonino così puoi stare in contatto con i tuoi amici più cari?,
+SAY.f5-spiaggia.43.Nico il cervo,,"grazie, cari... senza di voi non avrei trovato il coraggio di ricominciare...",
+SAY.f5-spiaggia.15.Nico il cervo,, non mi sono mai sentito così a... come a casa mia anche in questo luogo così improbabile!,
+SAY.f5-spiaggia.16.Gigi la trota,,basta stare nell'acqua!,
+SAY.f5-spiaggia.44.Nico il cervo,,posso venire con voi ovunque andiate?,
+MENU.f5-spiaggia.47,,uhm.. siamo già in troppi ci dispiace,sure
+MENU.f5-spiaggia.45,,certo,
+SAY.f5-spiaggia.33.Nico il cervo,,con questa BUSSOLA saprò sempre trovare una direzione,
+SAY.f5-spiaggia.32.Nico il cervo,,con questo TELEFONINO potrò rimanere in contatto con chi conosco e conoscere ciò che non conosco,
+SAY.f5-spiaggia.31.Nico il cervo,,ahh le mie NOCI preferite,
+SAY.f5-spiaggia.48.Nico il cervo,,ok andrò in giro da solo... addio,
+SAY.f2-cortile.10.Gigo il cinghiale,,"Grazie, pecorella..  non hai paura a parlare gli sconosciuti vero?",
+SAY.f2-cortile.28.Lili la pecora,,beh.. tanta paura no.. diciamo che spero tu sia come me e quindi un bravo animale!,
+SAY.f2-cortile.83.Lili la pecora,,mal che vada cercherò di scappare,
+SAY.f2-cortile.26.Gigo il cinghiale,,quando chi non mi conosce mi guarda.. pensa subito che io sia cattivo perché non sembro amichevole.. ahh .. le apparenze,
+SAY.f2-cortile.31.Lili la pecora,,"sembri un mostro, ma parli come un'essere gentile... cosa fai nella cuccia di Fufi?",
+SAY.f2-cortile.32.Gigo il cinghiale,,passavo di qui e non mi sono più sentito bene.. credo sia un problema al mio corpo,
+SAY.f2-cortile.29.Gigo il cinghiale,,sembra stanco.. non ha energia,
+SAY.f2-cortile.34.Lili la pecora,,non è che ha sempliemente fame?,
+SAY.f2-cortile.27.Gigo il cinghiale,,?? in effetti non mangio da molti giorni,
+SAY.f2-cortile.35.Gigo il cinghiale,,ma c'è un solo cibo che mi piace davvero tanto,
+SAY.f2-cortile.30.Lili la pecora,,e cos'è?,what's that?
+SAY.f2-cortile.33.Gigo il cinghiale,,la pizza..... e da queste parti non ci sono pizzerie!,pizza… and around here there aren't pizza makers
+SAY.f2-cortile.36.Lili la pecora,,vero.. non ci sono  pizzerie.. ma abbiamo un orto spettacolare.. guarda cosa ti combino... e prepara l'acquolina!,
+SAY.f2-cortile.19.Lili la pecora,,a che bello stare all'aria aperta!... liberi nel mondo... voglio proprio goder...,enjo…
+SAY.f2-cortile.20.Lili la pecora,,ma chi è che dorme nella cuccia che era di Fufi?,but who it sleeping in Fufi's place?
+SAY.f2-cortile.21.Lili la pecora,,AIUTO! non è un cane... è un...,HELP! It's not a dog… it's a …
+SAY.f2-cortile.22.Gigo il cinghiale,,"GIGO, e sono un CINGHIALE","GIGO, and i'm a boar"
+MENU.f2-cortile.23,,corro subito in casa,i run back home
+MENU.f2-cortile.24,,mi avvicino e gli parlo,go near and talk
+MENU.f2-cortile.25,,lo guardo stando lontana,i watch it standig quite far
+SAY.f2-cortile.79.Gigo il cinghiale,,ahh che buona!... sei davvero un'amica... generosa e senza pregiudizi... posso accompagnarti nel tuo viaggio?,
+SAY.f2-cortile.80.Lili la pecora,,certo! ... volevo proprio un po' di compagnia per entrare nel bosco...,
+SAY.f2-cortile.49.Lili la pecora,,la pioggia ha riempito la fontanella!,the rain refilled the fountain
+SAY.f2-cortile.56.Lili la pecora,,ecco il nostro albero che cresce,here our tree
+SAY.f2-cortile.86.Lili la pecora,,non c'è acqua,there's no water
+SAY.f2-cortile.64.Lili la pecora,,il sole fa crescere proprio di tutto!... ecco le nostre pizze!,the sun empowers everything… really! … here are our pizza!
+SAY.f2-cortile.73.Lili la pecora,,"caro Gigo, eccoti la pizza che ti ristorerà! ne mangio una anch'io!","dear Gigo, here is the pizza that will restore you! I'll eat one, too"
+SAY.f2-cortile.88.Lili la pecora,,...,…
+SAY.f2-cortile.91.Gigo il cinghiale,,...,…
+SAY.f2-cortile.90.Lili la pecora,,... (non sembra cattivo) ...,… (it doesn't look bad)
+SAY.f2-cortile.89.Gigo il cinghiale,,... (chissà cosa sta pensando di me) ...,… (who knows what she's thinking about me) …
+SAY.f2-cortile.92.Lili la pecora,,"... (non sembra cattivo) ... {hpunch=10,0.5} coraggio.. andiamo...","… (it doesn't look bad)  ... {hpunch=10,0.5} come on… let's go"
+SAY.f1-casa.1.Lili la pecora,,AHHHHH che dormita... quel libro che ho letto ieri sera mi ha fatto fare sogni incredibili,AHHH what a sleep… that book i read last evening made me dream so wow
+SAY.f1-casa.2.Lili la pecora,,un libro sul rituale dell'andare a conoscere i propri animali... mah noi non abbiamo più animali!,a ritual book on the knowing of self animals… but we hot no pets anymore
+SAY.f1-casa.8.Lili la pecora,,a parte quelli dei vicini... il nostro Fufi è morto... ehi fuori sembra una così bella giornata!,our Fufi died long ago… ehi it looks a wonderful day outside!
+SAY.f1-casa.9.Lili la pecora,,però stamani sono a casa da sola ... e io ho paura ad uscire fuori da sola!... sono ancora piccola!,but today i'm home alone… our Fufi is dead… and it looks like a wonderful day outside!
+SAY.f1-casa.12.Lili la pecora,,ma quando diventerò grande? ... come si fa a diventare grandi?,but when will i grow up? … how do you grow up?
+SAY.f1-casa.15.Lili la pecora,,è solo una questione di età? ...o di dimensioni? ...o di quanto mangi? ... o di esperienza?,is it just my age?… or my dimensions? … how much i eat?… or the experiences i make?
+SAY.f1-casa.16.Lili la pecora,,il libro parlava di esperienze... ma come faccio ad avere esperienze?,the book was about experiences… but how can i make experiences?
+SAY.f1-casa.17.Lili la pecora,,ho deciso: esco in cortile a fare esperienze!,i made my mind: i'll go outside to make experiences!
+SAY.f1-casa.63.Lili la pecora,,mondo.. arrivo! {w}e da sola!,world… here i come! And alone!
+SAY.f1-casa.46.Lili la pecora,,cavoli la porta è chiusa a chiave!,damn the door is locked
+SAY.f1-casa.24.,,la porta è ancora chiusa a chiave!,the door is still locked
+SAY.f1-casa.25.Lili la pecora,,e se poi mi venisse sete? ... dovrei portarmi dell'acqua,and if i get thirsty? … shouldn't bring some water?
+SAY.f1-casa.49.Lili la pecora,,e se volessi fare dei disegni mentre sono in giro? .. mi sembrava avessi un quadernino,and if i'd need to draw?… i remember a notebook somewhere around
+SAY.f1-casa.57.,,ho preso la bottiglia d'acqua,water bottle taken
+SAY.f1-casa.58.,,ho preso il blocco da disegno,notebook taken
+SAY.f1-casa.56.Lili la pecora,,ahh ora la porta è aperta,ahh now the door is open
+SAY.f1-casa.71.Lili la pecora,,è vero che molti riti iniziano o finiscono con il fuoco?,is it true that many rituals start or finish with the fire?
+SAY.f3-bosco.38.Lili la pecora,,non sono mai venuta nel bosco da sola.. beh ora non sono proprio da sola,i've never come into the wood alone… well i'm not so alone now
+SAY.f3-bosco.39.Gigo il cinghiale,,(ammicco),(blink)
+SAY.f3-bosco.44.Lili la pecora,,ehi Gig guarda che costruzioni!... c'è nessuno lassù?,ehi Gig ook at those contructions up there… isn't anybody there?
+SAY.f3-bosco.35.Koko il koala,,...,…
+SAY.f3-bosco.45.Gigo il cinghiale,,anche a me sembra ci sia qualcuno,"i think there somebody, too"
+SAY.f3-bosco.37.Koko il koala,,... ...,… …
+SAY.f3-bosco.34.Lili la pecora,,dai che ti vediamo! non sei un albero!,come on we see ya! You're not a tree!
+SAY.f3-bosco.11.Koko il koala,,è che mi vergogno...,but i'm shy
+SAY.f3-bosco.47.Lili la pecora,,anche noi siamo timidi! (non è vero ma non diciamoglielo!!),"we are shy, too! (it's not true but don't tell him)"
+SAY.f3-bosco.10.Gigo il cinghiale,,c'è qualcosa che possiamo fare per farti scendere e giocare con noi?,is anything we can do to you help ya  climcing down?
+SAY.f3-bosco.46.Koko il koala,,nessuno mi capisce davvero... preferisco stare da solo,nobody really undestands me… i prefer to stay alone
+SAY.f3-bosco.36.Lili la pecora,,ma dai!,come on!
+SAY.f3-bosco.33.Koko il koala,,beh.. se davvero riuscite a capire il mio linguaggio... quello che per me conta di più è il...,well.. if you really can understand my language… what i really care more is ...
+SAY.f3-bosco.24.Koko il koala,,BRAVA!,GREAT!
+SAY.f3-bosco.26.Koko il koala,,uhmmm,uhmmmm
+SAY.f3-bosco.31.Koko il koala,,allora forse anche voi parlate con il CUORE?,"so do you talk with the hearth, too?"
+SAY.f3-bosco.41.Koko il koala,,ormai sono così poche le persone che sanno sentire le emozioni degli altri{w} che mi vergognavo a stare con gli altri…,nowaday there so few people who can feel others emotions…that it's a shame to be with other 
+SAY.f3-bosco.40.Koko il koala,,allora scendo.. {w}vengo con voi!,i'm climbing down… i'll come with you!
+CHARACTER.Gigo il cinghiale,,Gigo il cinghiale,Gigo the boar 
+CHARACTER.Nico il cervo,,Nico il cervo,Nico the deer
+CHARACTER.Poso il panda,,Poso il panda,Poso the panda
+CHARACTER.Giom la balena,,Giom la balena,Giom the whale
+CHARACTER.Lili la pecora,,Lili la pecora,Lili the sheep
+CHARACTER.Rulo l'orso,,Rulo l'orso,Rulo the bear
+CHARACTER.Gigi la trota,,Gigi la trota,Gigi the fish
+CHARACTER.Koko il koala,,Koko il koala,Koko the koala
