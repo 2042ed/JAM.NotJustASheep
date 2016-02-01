@@ -10,9 +10,16 @@ works on any desktop and tablet device, english + italian
 - Fabio "Lili" Cecere (game design, story, drawings, son)
 - Stefano "Cecio" Cecere (game dev, additional story, translations, music, dad)
 
+## sources
+the sources of this game are here: https://github.com/PensieroProfondo/NotJustASheep
+
 ## contribute
-this game is under Creative Commons. it was designed by a child for children (but adults could enjoy it anyway ;)
-feel free to contribute.. mostly english translations and corrections!
+this game is under Attribution-Noncommercial-Share Alike Creative Commons License Creative.
+it was designed by a child for children (but adults could enjoy it anyway ;)
+feel free to contribute.. english translations and corrections are really welcome!
 
 ## website
 http://globalgamejam.org/2016/games/im-not-just-sheep-non-sono-solo-una-pecora
+
+a **Pensiero Profondo** production 
+http://pensieroprofondo.org
