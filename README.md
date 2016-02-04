@@ -1,6 +1,6 @@
 # I'm Not Just A Sheep (Non sono solo una pecora)
-our GGJ 2016 game: an interactive story
-works on any desktop and tablet device, english + italian 
+our GGJ 2016 game: an interactive story.  
+works on any desktop and tablet device, english + italian.  
 full open source project under CC
 
 ## technology
@@ -15,8 +15,8 @@ full open source project under CC
 the sources of this game are here: https://github.com/PensieroProfondo/NotJustASheep
 
 ## contribute
-this game is under Attribution-Noncommercial-Share Alike Creative Commons License Creative.
-it was designed by a child for children (but adults could enjoy it anyway ;)
+this game is under Attribution-Noncommercial-Share Alike Creative Commons License Creative.  
+it was designed by a child for children (but adults could enjoy it anyway ;)  
 **feel free to contribute..** english translations and corrections are really welcome!
 
 ## website
