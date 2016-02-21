@@ -32,7 +32,7 @@ SAY.f7-isola.33.Gigo il cinghiale,,io della colla,some glue here
 SAY.f7-isola.34.Gigi la trota,,io vedo un secchiello di vernice (è simile al mio!),i see a bucket of painting (it's similar to mine bucket!)
 SAY.f7-isola.35.Lili la pecora,,ottimo.. possiamo aggiustare tutto! al lavoro!,perfect! We can fix it! Let's work!
 SAY.f7-isola.36.Rulo l'orso,,ragazzi siete fantastici! ... ora manca solo la pallina rossa che è incastrata lassù!... come la recuperiamo?,guys you're fantastic!… now i just miss that red ball stucked up there… how can we get it?
-SAY.f7-isola.19.,,devo spingere verso A o tirare verso B per riprendermi la pallina rossa?,should i push to A or pull to B to get back the red ball?
+SAY.f7-isola.19.Rulo l'orso,,devo spingere verso A o tirare verso B per riprendermi la pallina rossa? (clicca A o B),
 SAY.f7-isola.12.Rulo l'orso,,fantastico amici! {w}non pensavo che tutto potessi aggiustarsi!,great! {w}i didn't know everything could be fixed
 SAY.f7-isola.13.Rulo l'orso,,verrò con voi... dove si va?,i'll come with you.. where're we going?
 SAY.f7-isola.37.Lili la pecora,,ho la strana sensazioen che dovremo andare in alto...,i got the feeling that we should go up…
@@ -98,7 +98,7 @@ SAY.f9-finale.12.Rulo l'orso,,"non disperarsi per gli incidenti... e dedicarsi a
 SAY.f9-finale.13.Poso il panda,,a continuare a cercare il senso della vita giocando in armonia con gli altri!,"to keep searching the meaning of life, playing in harmony with others!"
 SAY.f9-finale.7.Lili la pecora,,ora mi sento davvero cresciuta!... più grande... ma dentro!,now i feel grown up!… bigger… but inside!
 SAY.f9-finale.15.Lili la pecora,,grazie! ... vi porterò sempre nel mio cuore e nella mia mente,thank you! .. i'll always have you in my heart and in my mind
-SAY.f9-finale.33.Lili la pecora,,ora vado a fare colazione... che è un altro gran bel RITUALE ,now i'll go to have breakfast… which is another very nice RITUAL
+SAY.f9-finale.33.Lili la pecora,,ora vado a fare colazione... che è un altro gran bel RITUALE ;),now i'll go to have breakfast… which is another very nice RITUAL
 SAY.f5-spiaggia.11.Lili la pecora,,ahhh la spiaggia.. il mare... spero di tornarci più spesso in futuro!,ahhh the beach.. the sea… i hope to get back here more often
 SAY.f5-spiaggia.41.Gigi la trota,,da qua dentro non vedo niente.. non c'è un secchiello trasparente?,from here i don't see anything.. haven't we a transparent bucket?
 SAY.f5-spiaggia.40.Gigo il cinghiale,,non so se mi piace.. ci devo stare un po',i don't know if i like it.. i have to think about it
