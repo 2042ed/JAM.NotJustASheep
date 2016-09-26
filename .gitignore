@@ -19,4 +19,9 @@
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
-Assets/PygmyMonkey
+Assets/Plugins/Editor/
+Assets/Plugins/Editor.meta
+Assets/Standard Assets/ConsolePro/
+Assets/Standard Assets/ConsolePro.meta
+Assets/Standard Assets/PygmyMonkey
+Assets/Standard Assets/PygmyMonkey.meta

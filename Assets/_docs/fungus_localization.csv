@@ -32,7 +32,7 @@ SAY.f7-isola.33.Gigo il cinghiale,,io della colla,some glue here
 SAY.f7-isola.34.Gigi la trota,,io vedo un secchiello di vernice (è simile al mio!),i see a bucket of painting (it's similar to mine bucket!)
 SAY.f7-isola.35.Lili la pecora,,ottimo.. possiamo aggiustare tutto! al lavoro!,perfect! We can fix it! Let's work!
 SAY.f7-isola.36.Rulo l'orso,,ragazzi siete fantastici! ... ora manca solo la pallina rossa che è incastrata lassù!... come la recuperiamo?,guys you're fantastic!… now i just miss that red ball stucked up there… how can we get it?
-SAY.f7-isola.19.Rulo l'orso,,devo spingere verso A o tirare verso B per riprendermi la pallina rossa? (clicca A o B),
+SAY.f7-isola.19.Rulo l'orso,,devo spingere verso A o tirare verso B per riprendermi la pallina rossa? (clicca A o B),should i push towards A or pull towards B to take back the red ball? (click A or B)
 SAY.f7-isola.12.Rulo l'orso,,fantastico amici! {w}non pensavo che tutto potessi aggiustarsi!,great! {w}i didn't know everything could be fixed
 SAY.f7-isola.13.Rulo l'orso,,verrò con voi... dove si va?,i'll come with you.. where're we going?
 SAY.f7-isola.37.Lili la pecora,,ho la strana sensazioen che dovremo andare in alto...,i got the feeling that we should go up…
@@ -79,11 +79,11 @@ SAY.f8-nuvole.15.Lili la pecora,,PROVIAMOCI!!! [NOTA: non abbiamo finito questo 
 MENU.f8-nuvole.16,,[cantiamo tutti in coro la stessa nota],[let's sing everybody the SAME note]
 MENU.f8-nuvole.21,,[NON cantiamo tutti la stessa nota],[do NOT sing the same note]
 SAY.f8-nuvole.18.Poso il panda,,che squadra ragazzi! torniamo giù!,"what a team, guys! Let's go back down on earth!"
-SAY.f8-nuvole.22.Lili la pecora,,niente.. pensavo fossimo un po' intonabili... e che saremmo riusciti a stare in armonia...,well.. i thought we could find harmony 
+SAY.f8-nuvole.22.Lili la pecora,,niente.. pensavo fossimo un po' intonabili... e che saremmo riusciti a stare in armonia...,well.. i thought we could find harmony
 SAY.f8-nuvole.27.Lili la pecora,,forse devo ricominciare tutto da capo.. o prendere un po' di lezioni di musica!,maybe you should restart everything.. or take some musical lesson!
-SAY.f10 - credits.1.,,"Hai giocato a NON SONO SOLO UNA PECORA {w}il primo gioco scritto da Fabio ""Lili"" Cecere {e}e prodotto insieme al suo papà Stefano ""Cecio"" Cecere",you played I'M NOT JUST A SHEEP… the first game written by Fabio “Lili” Cecere {e}and developed with his dad Stefano “Cecio” Cecere
-SAY.f10 - credits.2.,,durante la Global Game Jam 2016 a Pisa.,at the Global Game Jam 2016 in Pisa (Italy)
-SAY.f10 - credits.3.,,grazie e speriamo ti sia piaciuto!,thank you and we hope you liked it!
+SAY.f10-credits.1.,,"Hai giocato a NON SONO SOLO UNA PECORA {w}il primo gioco scritto da Fabio ""Lili"" Cecere {e}e prodotto insieme al suo papà Stefano ""Cecio"" Cecere","You played I'm not just a Sheep{w}, the first game written by Fabio ""Lili"" Cecere {e} and produced with his dad Stefano Cecere"
+SAY.f10-credits.2.,,durante la Global Game Jam 2016 a Pisa.,within the 2016 Global Game Jam in Pisa (Italy)
+SAY.f10-credits.3.,,grazie e speriamo ti sia piaciuto!,Thank you and we hope you liked it!
 SAY.f9-finale.14.Lili la pecora,,Non ci posso credere... sono tornata a casa!... o non sono mai uscita?,I can't belive… i'm back home!… and with you all!
 SAY.f9-finale.29.Lili la pecora,,era tutto un sogno? ... uhm.. no.. voi siete tutti qui!,was it all just a dream?… uhm… no… you are all here!
 SAY.f9-finale.30.Gigo il cinghiale,,"noi siamo le esperienze che fai nella vita, Lili","we are the experiences of your life, Lili"
@@ -110,7 +110,7 @@ SAY.f5-spiaggia.12.Gigo il cinghiale,,hai mangiato il tuo cibo preferito?,did yo
 SAY.f5-spiaggia.10.Gigi la trota,,hai uno strumento che ti dia la direzione più interessante?,have you a tool to get an interesting direction?
 SAY.f5-spiaggia.13.Koko il koala,,perchè non ti prendi un telefonino così puoi stare in contatto con i tuoi amici più cari?,why don't you get a phone to keep in touch with your dearest friends?
 SAY.f5-spiaggia.43.Nico il cervo,,"grazie, cari... senza di voi non avrei trovato il coraggio di ricominciare...",thank you dears… without you i couldn't reboot…
-SAY.f5-spiaggia.15.Nico il cervo,, non mi sono mai sentito così a... come a casa mia anche in questo luogo così improbabile!,"i've never felt so well like at… home, even in this improbable place!"
+SAY.f5-spiaggia.15.Nico il cervo,,non mi sono mai sentito così a... come a casa mia anche in questo luogo così improbabile!,"i've never felt so well like at… home, even in this improbable place!"
 SAY.f5-spiaggia.16.Gigi la trota,,basta stare nell'acqua!,just stay in the water!
 SAY.f5-spiaggia.44.Nico il cervo,,posso venire con voi ovunque andiate?,can i go with you wherever you go?
 MENU.f5-spiaggia.47,,uhm.. siamo già in troppi ci dispiace,"uhm… we are already too many, sorry"
@@ -184,9 +184,9 @@ SAY.f3-bosco.33.Koko il koala,,beh.. se davvero riuscite a capire il mio linguag
 SAY.f3-bosco.24.Koko il koala,,BRAVA!,GREAT!
 SAY.f3-bosco.26.Koko il koala,,uhmmm,uhmmmm
 SAY.f3-bosco.31.Koko il koala,,allora forse anche voi parlate con il CUORE?,"so do you talk with the HEART, too?"
-SAY.f3-bosco.41.Koko il koala,,ormai sono così poche le persone che sanno sentire le emozioni degli altri{w} che mi vergognavo a stare con loro...,nowaday there so few people who can feel others emotions…that it's a shame to be with other 
+SAY.f3-bosco.41.Koko il koala,,ormai sono così poche le persone che sanno sentire le emozioni degli altri{w} che mi vergognavo a stare con loro...,nowaday there so few people who can feel others emotions…that it's a shame to be with other
 SAY.f3-bosco.40.Koko il koala,,allora scendo.. {w}vengo con voi!,i'm climbing down… i'll come with you!
-CHARACTER.Gigo il cinghiale,,Gigo il cinghiale,Gigo the boar 
+CHARACTER.Gigo il cinghiale,,Gigo il cinghiale,Gigo the boar
 CHARACTER.Nico il cervo,,Nico il cervo,Nico the deer
 CHARACTER.Poso il panda,,Poso il panda,Poso the panda
 CHARACTER.Giom la balena,,Giom la balena,Giom the whale
