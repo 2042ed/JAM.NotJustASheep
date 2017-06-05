@@ -64,8 +64,20 @@ namespace Fungus
 
         protected StringSubstituter stringSubstituter;
 
+#if !FUNGUSLUA_STANDALONE
         protected ConversationManager conversationManager;
-        
+#endif
+
+        protected virtual void OnEnable()
+        {
+            StringSubstituter.RegisterHandler(this);
+        }
+
+        protected virtual void OnDisable()
+        {
+            StringSubstituter.UnregisterHandler(this);
+        }
+            
         /// <summary>
         /// Registers all listed c# types for interop with Lua.
         /// You can also register types directly in the Awake method of any 
@@ -73,8 +85,6 @@ namespace Fungus
         /// </summary>
         protected virtual void InitTypes()
         {
-            bool isFungusInstalled = (Type.GetType("Fungus.Flowchart") != null);
-
             // Always register these FungusLua utilities
             LuaEnvironment.RegisterType("Fungus.PODTypeFactory");
             LuaEnvironment.RegisterType("Fungus.FungusPrefs");
@@ -107,9 +117,7 @@ namespace Fungus
                         {
                             string typeName = entry.str.Trim();
 
-                            // Don't register fungus types if the Fungus library is not present
-                            if (!isFungusInstalled &&
-                                typeName.StartsWith("Fungus."))
+                            if (Type.GetType(typeName) == null)
                             {
                                 continue;
                             }
@@ -131,9 +139,7 @@ namespace Fungus
                         {
                             string typeName = entry.str.Trim();
 
-                            // Don't register fungus types if the Fungus library is not present
-                            if (!isFungusInstalled &&
-                                typeName.StartsWith("Fungus."))
+                            if (Type.GetType(typeName) == null)
                             {
                                 continue;
                             }
@@ -249,10 +255,11 @@ namespace Fungus
             }
 
             stringSubstituter = new StringSubstituter();
-            stringSubstituter.CacheSubstitutionHandlers();
 
+#if !FUNGUSLUA_STANDALONE
             conversationManager = new ConversationManager();
             conversationManager.PopulateCharacterCache();
+#endif
 
             if (fungusModule == FungusModuleOptions.UseGlobalVariables)
             {               
@@ -448,6 +455,8 @@ namespace Fungus
             return null;
         }
 
+
+#if !FUNGUSLUA_STANDALONE
         /// <summary>
         /// Use the conversation manager to play out a conversation
         /// </summary>
@@ -485,6 +494,7 @@ namespace Fungus
         {
             return MenuDialog.GetMenuDialog();
         }
+#endif
 
         #endregion
 

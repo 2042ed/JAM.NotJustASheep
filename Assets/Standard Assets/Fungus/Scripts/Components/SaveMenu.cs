@@ -14,7 +14,7 @@ namespace Fungus
     /// </summary>
     public class SaveMenu : MonoBehaviour 
     {
-        [Tooltip("Save Data Key: The string key used to store save game data in Player Prefs. If you have multiple games defined in the same Unity project, use a unique key for each one.")]
+        [Tooltip("The string key used to store save game data in Player Prefs. If you have multiple games defined in the same Unity project, use a unique key for each one.")]
         [SerializeField] protected string saveDataKey = FungusConstants.DefaultSaveDataKey;
 
         [Tooltip("Automatically load the most recently saved game on startup")]
@@ -117,21 +117,25 @@ namespace Fungus
                 {
                     // Don't allow saving unless there's at least one save point in the history,
                     // This avoids the case where you could try to load a save data with 0 save points.
-                    saveButton.interactable = saveManager.NumSavePoints > 0;
+                    saveButton.interactable = saveManager.NumSavePoints > 0 && saveMenuActive;
                 }
                 if (loadButton != null)
                 {
-                    loadButton.interactable = saveManager.SaveDataExists(saveDataKey);
+                    loadButton.interactable = saveManager.SaveDataExists(saveDataKey) && saveMenuActive;
                 }
             }
 
+            if (restartButton != null)
+            {
+                restartButton.interactable = saveMenuActive;
+            }
             if (rewindButton != null)
             {
-                rewindButton.interactable = saveManager.NumSavePoints > 0;
+                rewindButton.interactable = saveManager.NumSavePoints > 0 && saveMenuActive;
             }
             if (forwardButton != null)
             {
-                forwardButton.interactable = saveManager.NumRewoundSavePoints > 0;
+                forwardButton.interactable = saveManager.NumRewoundSavePoints > 0 && saveMenuActive;
             }
 
             if (debugView.enabled)
@@ -174,6 +178,11 @@ namespace Fungus
         }
 
         #region Public methods
+
+        /// <summary>
+        /// Gets the string key used to store save game data in Player Prefs. 
+        /// </summary>
+        public virtual string SaveDataKey { get { return saveDataKey; } }
 
         /// <summary>
         /// Toggles the expanded / collapsed state of the save menu.
