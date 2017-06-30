@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using DG.Tweening;
 
 public class ObjectAnimation : MonoBehaviour
@@ -10,11 +9,7 @@ public class ObjectAnimation : MonoBehaviour
         DOTween.Init (false, true, LogBehaviour.ErrorsOnly);
 
         gameObject.transform.DOMoveX (1f, 3).SetRelative ().SetLoops (-1, LoopType.Yoyo).SetEase (Ease.InOutQuad);
-        //gameObject.transform.DOMoveX (2f, 3).SetRelative ().SetLoops (-1, LoopType.Yoyo);
-
-
-
-
+  
         // FIRST OF ALL, note this!
         // Sequences contain and animate other tweens,
         // but they DON'T need to be one after each other:
