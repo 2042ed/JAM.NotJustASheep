@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1438463
 GameObject:
@@ -147,6 +152,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -162,6 +168,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -218,6 +225,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -233,6 +241,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -333,6 +342,7 @@ SpriteRenderer:
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -348,6 +358,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -463,6 +474,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221674
 MonoBehaviour:
@@ -669,6 +681,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221682
 MonoBehaviour:
@@ -757,6 +770,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &80221686
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -781,6 +797,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221687
 MonoBehaviour:
@@ -806,6 +823,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221688
 MonoBehaviour:
@@ -832,6 +850,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221689
 MonoBehaviour:
@@ -858,6 +877,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221690
 MonoBehaviour:
@@ -883,6 +903,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221691
 MonoBehaviour:
@@ -908,6 +929,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221692
 MonoBehaviour:
@@ -933,6 +955,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221693
 MonoBehaviour:
@@ -958,6 +981,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221694
 MonoBehaviour:
@@ -1097,6 +1121,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221700
 MonoBehaviour:
@@ -1123,6 +1148,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221701
 MonoBehaviour:
@@ -1148,6 +1174,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221702
 MonoBehaviour:
@@ -1173,6 +1200,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221703
 MonoBehaviour:
@@ -1195,6 +1223,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &80221704
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1220,6 +1251,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221705
 MonoBehaviour:
@@ -1246,6 +1278,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221706
 MonoBehaviour:
@@ -1271,6 +1304,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &80221707
 MonoBehaviour:
@@ -1315,6 +1349,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1 &97887694
 GameObject:
@@ -1486,6 +1521,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1501,6 +1537,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1557,6 +1594,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1572,6 +1610,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1631,6 +1670,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1646,6 +1686,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1702,6 +1743,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1717,6 +1759,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1918,6 +1961,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1933,6 +1977,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2023,6 +2068,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -2038,6 +2084,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2172,6 +2219,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -2187,6 +2235,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2394,6 +2443,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -2409,6 +2459,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2692,6 +2743,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880874
 MonoBehaviour:
@@ -2881,6 +2933,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880882
 MonoBehaviour:
@@ -2991,6 +3044,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880886
 MonoBehaviour:
@@ -3036,6 +3090,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880888
 MonoBehaviour:
@@ -3082,6 +3137,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880890
 MonoBehaviour:
@@ -3246,6 +3302,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880898
 MonoBehaviour:
@@ -3271,6 +3328,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880899
 MonoBehaviour:
@@ -3375,6 +3433,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880903
 MonoBehaviour:
@@ -3400,6 +3459,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880904
 MonoBehaviour:
@@ -3425,6 +3485,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880905
 MonoBehaviour:
@@ -3450,6 +3511,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880906
 MonoBehaviour:
@@ -3475,6 +3537,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880907
 MonoBehaviour:
@@ -3501,6 +3564,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880908
 MonoBehaviour:
@@ -3526,6 +3590,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880909
 MonoBehaviour:
@@ -3551,6 +3616,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880910
 MonoBehaviour:
@@ -3576,6 +3642,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880911
 MonoBehaviour:
@@ -3601,6 +3668,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880912
 MonoBehaviour:
@@ -3626,6 +3694,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880913
 MonoBehaviour:
@@ -3651,6 +3720,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880914
 MonoBehaviour:
@@ -3676,6 +3746,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880915
 MonoBehaviour:
@@ -3701,6 +3772,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &301880916
 MonoBehaviour:
@@ -4012,6 +4084,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791039
 MonoBehaviour:
@@ -4138,6 +4211,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791044
 MonoBehaviour:
@@ -4177,6 +4251,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791046
 MonoBehaviour:
@@ -4310,6 +4385,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791052
 MonoBehaviour:
@@ -4353,6 +4429,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 0
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791054
 MonoBehaviour:
@@ -4562,6 +4639,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791064
 MonoBehaviour:
@@ -4587,6 +4665,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791065
 MonoBehaviour:
@@ -4612,6 +4691,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791066
 MonoBehaviour:
@@ -5690,6 +5770,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791120
 MonoBehaviour:
@@ -5712,6 +5793,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &323791121
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5782,6 +5866,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791124
 MonoBehaviour:
@@ -5804,6 +5889,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &323791125
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5828,6 +5916,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791126
 MonoBehaviour:
@@ -5853,6 +5942,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791127
 MonoBehaviour:
@@ -5878,6 +5968,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791128
 MonoBehaviour:
@@ -5903,6 +5994,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791129
 MonoBehaviour:
@@ -5928,6 +6020,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791130
 MonoBehaviour:
@@ -5953,6 +6046,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791131
 MonoBehaviour:
@@ -5978,6 +6072,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791132
 MonoBehaviour:
@@ -6023,6 +6118,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791134
 MonoBehaviour:
@@ -6073,6 +6169,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &323791136
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6094,6 +6193,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &323791137
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6118,6 +6220,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791138
 MonoBehaviour:
@@ -6160,6 +6263,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791140
 MonoBehaviour:
@@ -6185,6 +6289,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &323791141
 MonoBehaviour:
@@ -6210,6 +6315,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 0
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1 &331722870
 GameObject:
@@ -6463,6 +6569,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6478,6 +6585,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6534,6 +6642,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6549,6 +6658,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6606,6 +6716,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -6621,6 +6732,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6740,11 +6852,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &385675767
 Transform:
   m_ObjectHideFlags: 0
@@ -6844,6 +6956,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194835
 MonoBehaviour:
@@ -7065,6 +7178,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194844
 MonoBehaviour:
@@ -7138,6 +7252,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194847
 MonoBehaviour:
@@ -7160,6 +7275,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &387194848
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7181,6 +7299,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &387194849
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7251,6 +7372,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194852
 MonoBehaviour:
@@ -7277,6 +7399,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194853
 MonoBehaviour:
@@ -7302,6 +7425,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194854
 MonoBehaviour:
@@ -7327,6 +7451,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194855
 MonoBehaviour:
@@ -7352,6 +7477,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194856
 MonoBehaviour:
@@ -7378,6 +7504,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194857
 MonoBehaviour:
@@ -7404,6 +7531,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194858
 MonoBehaviour:
@@ -7429,6 +7557,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194859
 MonoBehaviour:
@@ -7454,6 +7583,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &387194860
 MonoBehaviour:
@@ -7480,6 +7610,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1 &393713162
 GameObject:
@@ -7520,6 +7651,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -7535,6 +7667,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7592,6 +7725,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -7607,6 +7741,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7765,6 +7900,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -7780,6 +7916,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7852,6 +7989,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -7867,6 +8005,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7997,6 +8136,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8012,6 +8152,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8068,6 +8209,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8083,6 +8225,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8244,6 +8387,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &487566866
 MonoBehaviour:
@@ -8269,6 +8413,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &487566867
 MonoBehaviour:
@@ -8295,6 +8440,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!4 &487566868
 Transform:
@@ -8569,6 +8715,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8584,6 +8731,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8640,6 +8788,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8655,6 +8804,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8717,6 +8867,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8732,6 +8883,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8777,7 +8929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1743004731}
+  selectedFlowchart: {fileID: 1672359055}
 --- !u!4 &573868321
 Transform:
   m_ObjectHideFlags: 1
@@ -8834,6 +8986,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8849,6 +9002,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8949,6 +9103,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -8964,6 +9119,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9021,6 +9177,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -9036,6 +9193,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9092,6 +9250,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -9107,6 +9266,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9163,6 +9323,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -9178,6 +9339,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9354,6 +9516,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!4 &630238518
 Transform:
@@ -9439,6 +9602,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238521
 MonoBehaviour:
@@ -9465,6 +9629,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238522
 MonoBehaviour:
@@ -9490,6 +9655,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238523
 MonoBehaviour:
@@ -9515,6 +9681,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238524
 MonoBehaviour:
@@ -9577,6 +9744,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238527
 MonoBehaviour:
@@ -9603,6 +9771,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238528
 MonoBehaviour:
@@ -9629,6 +9798,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238529
 MonoBehaviour:
@@ -9654,6 +9824,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238530
 MonoBehaviour:
@@ -9679,6 +9850,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238531
 MonoBehaviour:
@@ -9966,6 +10138,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238544
 MonoBehaviour:
@@ -9991,6 +10164,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238545
 MonoBehaviour:
@@ -10016,6 +10190,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238546
 MonoBehaviour:
@@ -10041,6 +10216,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &630238547
 MonoBehaviour:
@@ -10066,6 +10242,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1001 &649507444
 Prefab:
@@ -10318,6 +10495,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -10333,6 +10511,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -10747,6 +10926,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -10762,6 +10942,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -10894,6 +11075,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044685
 MonoBehaviour:
@@ -11046,6 +11228,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044691
 MonoBehaviour:
@@ -11142,6 +11325,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044695
 MonoBehaviour:
@@ -11167,6 +11351,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044696
 MonoBehaviour:
@@ -11192,6 +11377,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044697
 MonoBehaviour:
@@ -11231,6 +11417,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044699
 MonoBehaviour:
@@ -11336,6 +11523,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044704
 MonoBehaviour:
@@ -11361,6 +11549,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044705
 MonoBehaviour:
@@ -11662,6 +11851,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044720
 MonoBehaviour:
@@ -11688,6 +11878,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044721
 MonoBehaviour:
@@ -11827,6 +12018,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &857044727
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11848,6 +12042,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &857044728
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11918,6 +12115,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044731
 MonoBehaviour:
@@ -11943,6 +12141,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044732
 MonoBehaviour:
@@ -11968,6 +12167,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044733
 MonoBehaviour:
@@ -11993,6 +12193,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044734
 MonoBehaviour:
@@ -12018,6 +12219,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044735
 MonoBehaviour:
@@ -12044,6 +12246,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044736
 MonoBehaviour:
@@ -12069,6 +12272,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &857044737
 MonoBehaviour:
@@ -12094,6 +12298,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1 &873778479
 GameObject:
@@ -12238,6 +12443,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -12253,6 +12459,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -12376,6 +12583,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -12391,6 +12599,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -12764,6 +12973,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -12779,6 +12989,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13026,6 +13237,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13041,6 +13253,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13177,6 +13390,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13192,6 +13406,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13249,6 +13464,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13264,6 +13480,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13329,6 +13546,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13344,6 +13562,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13402,6 +13621,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13417,6 +13637,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13565,6 +13786,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13580,6 +13802,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -13637,6 +13860,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -13652,6 +13876,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -14107,6 +14332,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1225585391
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14196,6 +14424,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585394
 MonoBehaviour:
@@ -14235,6 +14464,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1225585396
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14256,6 +14488,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &1225585397
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14280,6 +14515,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585398
 MonoBehaviour:
@@ -14305,6 +14541,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585399
 MonoBehaviour:
@@ -14330,6 +14567,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585400
 MonoBehaviour:
@@ -14356,6 +14594,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585401
 MonoBehaviour:
@@ -14424,6 +14663,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585405
 MonoBehaviour:
@@ -14449,6 +14689,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585406
 MonoBehaviour:
@@ -14474,6 +14715,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585407
 MonoBehaviour:
@@ -14499,6 +14741,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585408
 MonoBehaviour:
@@ -14524,6 +14767,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585409
 MonoBehaviour:
@@ -14549,6 +14793,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585410
 MonoBehaviour:
@@ -14574,6 +14819,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585411
 MonoBehaviour:
@@ -14600,6 +14846,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585412
 MonoBehaviour:
@@ -14626,6 +14873,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585413
 MonoBehaviour:
@@ -14652,6 +14900,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585414
 MonoBehaviour:
@@ -14678,6 +14927,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585415
 MonoBehaviour:
@@ -14823,6 +15073,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585422
 MonoBehaviour:
@@ -14989,6 +15240,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585430
 MonoBehaviour:
@@ -15015,6 +15267,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585431
 MonoBehaviour:
@@ -15087,6 +15340,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585435
 MonoBehaviour:
@@ -15297,6 +15551,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585445
 MonoBehaviour:
@@ -15492,6 +15747,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585454
 MonoBehaviour:
@@ -15659,6 +15915,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585461
 MonoBehaviour:
@@ -15701,6 +15958,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585463
 MonoBehaviour:
@@ -15789,6 +16047,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585467
 MonoBehaviour:
@@ -15814,6 +16073,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585468
 MonoBehaviour:
@@ -15839,6 +16099,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585469
 MonoBehaviour:
@@ -15864,6 +16125,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1225585470
 MonoBehaviour:
@@ -15889,6 +16151,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!1 &1243542548
 GameObject:
@@ -16244,6 +16507,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -16259,6 +16523,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -16433,6 +16698,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -16448,6 +16714,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -16546,6 +16813,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -16561,6 +16829,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -16724,6 +16993,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -16739,6 +17009,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -16873,6 +17144,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -16888,6 +17160,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -17099,6 +17372,7 @@ SpriteRenderer:
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -17114,6 +17388,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -17173,6 +17448,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -17188,6 +17464,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -17301,6 +17578,7 @@ SpriteRenderer:
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -17316,6 +17594,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -17438,6 +17717,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -17453,6 +17733,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -17554,7 +17835,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1672359052
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17577,10 +17858,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359053
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17597,7 +17879,7 @@ MonoBehaviour:
   targetCamera: {fileID: 0}
 --- !u!114 &1672359054
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a,
     type: 2}
   m_PrefabInternal: {fileID: 0}
@@ -17650,7 +17932,7 @@ MonoBehaviour:
   scrollPos: {x: 0, y: 0}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 429
   zoom: 0.91199464
   scrollViewRect:
     serializedVersion: 2
@@ -17658,7 +17940,8 @@ MonoBehaviour:
     y: -388
     width: 1692
     height: 1085
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1672359071}
   selectedCommands: []
   variables:
   - {fileID: 1672359057}
@@ -17667,7 +17950,7 @@ MonoBehaviour:
   description: 
   stepPause: 0
   colorCommands: 1
-  hideComponents: 1
+  hideComponents: 0
   saveSelection: 1
   localizationId: f1-casa
   showLineNumbers: 0
@@ -17689,7 +17972,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1672359057
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17703,7 +17986,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1672359058
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17723,7 +18006,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1672359059
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17746,10 +18029,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359060
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17769,7 +18053,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1672359061
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17792,10 +18076,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359062
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17818,10 +18103,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359063
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17835,7 +18121,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1672359064
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17849,7 +18135,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1672359065
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17872,10 +18158,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359066
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17892,7 +18179,7 @@ MonoBehaviour:
   fadeDuration: 1
 --- !u!114 &1672359067
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17914,10 +18201,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359068
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17939,10 +18227,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359069
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17969,7 +18258,7 @@ MonoBehaviour:
   - {fileID: 1672359111}
 --- !u!114 &1672359070
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -17991,10 +18280,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359071
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18007,7 +18297,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 444
     y: 152
-    width: 124
+    width: 122.36884
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18027,7 +18317,7 @@ MonoBehaviour:
   - {fileID: 1672359072}
 --- !u!114 &1672359072
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18040,7 +18330,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1672359073
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18053,7 +18343,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1672359074
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18075,10 +18365,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359075
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18105,7 +18396,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359076
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18119,7 +18410,7 @@ MonoBehaviour:
   waitFrames: 1
 --- !u!114 &1672359077
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18132,7 +18423,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 466
     y: 58
-    width: 130
+    width: 127.85133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18147,7 +18438,7 @@ MonoBehaviour:
   - {fileID: 1672359073}
 --- !u!114 &1672359078
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18174,7 +18465,7 @@ MonoBehaviour:
   - {fileID: 1672359084}
 --- !u!114 &1672359079
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18196,10 +18487,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359080
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18221,10 +18513,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359081
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18237,7 +18530,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1672359082
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18256,7 +18549,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &1672359083
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18275,7 +18568,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &1672359084
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18295,7 +18588,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 2133608624}
 --- !u!114 &1672359085
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18315,7 +18608,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1672359086
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18337,10 +18630,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359087
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18360,7 +18654,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1672359088
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18386,7 +18680,7 @@ MonoBehaviour:
   - {fileID: 1672359097}
 --- !u!114 &1672359089
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18408,10 +18702,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359090
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18428,7 +18723,7 @@ MonoBehaviour:
   targetCamera: {fileID: 0}
 --- !u!114 &1672359091
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18442,7 +18737,7 @@ MonoBehaviour:
   waitFrames: 1
 --- !u!114 &1672359092
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18456,7 +18751,7 @@ MonoBehaviour:
   waitFrames: 1
 --- !u!114 &1672359093
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18483,7 +18778,7 @@ MonoBehaviour:
   - {fileID: 1672359112}
 --- !u!114 &1672359094
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18510,7 +18805,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359095
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18524,7 +18819,7 @@ MonoBehaviour:
   key: bypass
 --- !u!114 &1672359096
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18541,7 +18836,7 @@ MonoBehaviour:
   targetLabelOLD: {fileID: 1672359095}
 --- !u!114 &1672359097
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18561,7 +18856,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1672359098
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18581,7 +18876,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1672359099
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18594,7 +18889,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1672359100
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18617,10 +18912,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359101
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18647,7 +18943,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359102
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18674,7 +18970,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359103
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18683,14 +18979,9 @@ MonoBehaviour:
   m_Script: {fileID: 181447845}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 62
-  errorMessage: 
-  indentLevel: 0
-  targetObject: {fileID: 1608525266}
-  sortingLayer: 30
 --- !u!114 &1672359104
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18717,10 +19008,9 @@ MonoBehaviour:
   - {fileID: 1672359083}
   - {fileID: 1672359082}
   - {fileID: 1672359106}
-  - {fileID: 0}
 --- !u!114 &1672359105
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18739,7 +19029,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &1672359106
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18761,10 +19051,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359107
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18791,7 +19082,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359108
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18805,7 +19096,7 @@ MonoBehaviour:
   waitFrames: 1
 --- !u!114 &1672359109
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18824,7 +19115,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &1672359110
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18843,7 +19134,7 @@ MonoBehaviour:
   visibleOLD: 0
 --- !u!114 &1672359111
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18865,10 +19156,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359112
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18890,10 +19182,11 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1672359113
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18920,7 +19213,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359114
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18947,7 +19240,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1672359115
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18961,7 +19254,7 @@ MonoBehaviour:
   waitFrames: 1
 --- !u!114 &1672359116
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -18974,7 +19267,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 452
     y: 246
-    width: 126
+    width: 123.46535
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18986,7 +19279,7 @@ MonoBehaviour:
   - {fileID: 1672359087}
 --- !u!114 &1672359117
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -19011,7 +19304,7 @@ MonoBehaviour:
   - {fileID: 1672359068}
 --- !u!114 &1672359118
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672359051}
@@ -19062,6 +19355,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -19077,6 +19371,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -19204,6 +19499,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -19219,6 +19515,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -19371,6 +19668,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004730
 MonoBehaviour:
@@ -19744,6 +20042,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004746
 MonoBehaviour:
@@ -19769,6 +20068,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004747
 MonoBehaviour:
@@ -19880,6 +20180,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004752
 MonoBehaviour:
@@ -19918,6 +20219,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004754
 MonoBehaviour:
@@ -20109,6 +20411,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004763
 MonoBehaviour:
@@ -20154,6 +20457,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004765
 MonoBehaviour:
@@ -20180,6 +20484,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004766
 MonoBehaviour:
@@ -20206,6 +20511,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004767
 MonoBehaviour:
@@ -20231,6 +20537,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004768
 MonoBehaviour:
@@ -20256,6 +20563,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004769
 MonoBehaviour:
@@ -20281,6 +20589,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004770
 MonoBehaviour:
@@ -20306,6 +20615,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004771
 MonoBehaviour:
@@ -20331,6 +20641,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004772
 MonoBehaviour:
@@ -20356,6 +20667,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004773
 MonoBehaviour:
@@ -20420,6 +20732,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004776
 MonoBehaviour:
@@ -20445,6 +20758,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004777
 MonoBehaviour:
@@ -20470,6 +20784,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
+  waitForVO: 0
   setSayDialog: {fileID: 0}
 --- !u!114 &1743004778
 MonoBehaviour:
@@ -20593,6 +20908,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -20608,6 +20924,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -20708,6 +21025,7 @@ SpriteRenderer:
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -20723,6 +21041,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -20819,6 +21138,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -20834,6 +21154,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -20891,6 +21212,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -20906,6 +21228,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -20962,6 +21285,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -20977,6 +21301,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21036,6 +21361,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21051,6 +21377,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21107,6 +21434,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21122,6 +21450,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21178,6 +21507,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21193,6 +21523,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21249,6 +21580,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21264,6 +21596,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21354,6 +21687,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21369,6 +21703,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21469,6 +21804,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21484,6 +21820,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21914,6 +22251,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -21929,6 +22267,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -21987,6 +22326,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -22002,6 +22342,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -22130,6 +22471,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -22145,6 +22487,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -22245,6 +22588,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -22260,6 +22604,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -22514,6 +22859,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -22529,6 +22875,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -22799,6 +23146,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -22814,6 +23162,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -24056,6 +24405,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -24071,6 +24421,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -24195,6 +24546,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -24210,6 +24562,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -24311,6 +24664,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -24326,6 +24680,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
