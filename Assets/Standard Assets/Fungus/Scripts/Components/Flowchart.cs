@@ -1,4 +1,4 @@
-// This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
+// This code is part of the Fungus library (https://github.com/snozbot/fungus)
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
@@ -801,6 +801,23 @@ namespace Fungus
         }
 
         /// <summary>
+        /// Returns a list of variables matching the specified type.
+        /// </summary>
+        public virtual List<T> GetVariables<T>() where T: Variable
+        {
+            var varsFound = new List<T>();
+            
+            for (int i = 0; i < Variables.Count; i++)
+            {
+                var currentVar = Variables[i];
+                if (currentVar is T)
+                    varsFound.Add(currentVar as T);
+            }
+
+            return varsFound;
+        }
+
+        /// <summary>
         /// Register a new variable with the Flowchart at runtime. 
         /// The variable should be added as a component on the Flowchart game object.
         /// </summary>
@@ -1186,7 +1203,18 @@ namespace Fungus
             var res = gameObject.GetComponents<Block>();
             selectedBlocks = res.Where(x => x.IsSelected).ToList();
         }
-        
+
+        public void ReverseUpdateSelectedCache()
+        {
+            for (int i = 0; i < selectedBlocks.Count; i++)
+            {
+                if(selectedBlocks[i] != null)
+                {
+                    selectedBlocks[i].IsSelected = true;
+                }
+            }
+        }
+
         /// <summary>
         /// Reset the commands and variables in the Flowchart.
         /// </summary>

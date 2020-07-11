@@ -1,6 +1,103 @@
 Changelog {#changelog}
 =========
-[TOC]
+
+v3.13.2
+======
+
+## Fixed
+
+- Restore string VariableSubstitution in use of AnyVariableDataPair, found in SetVariable and VariableCondition (#841)
+- Float variable comparison, typo causing comparison to self instead of rhs(#836)
+
+v3.13.1
+======
+
+## Fixed
+
+- Build error in JsonChecker caused by missing asmdef in newer Unity versions. (#833)
+
+v3.13.0
+======
+
+## Added
+
+- Conditional Commands now support multiple comparisons as a chain of && or ||. Thanks to preda2or, and AcademyOfF
+- IWriterListener OnAllWorldsWritten fires when there are no words left to be written but writer may still have pending waits
+- Entry based NarrativeLog alternate. Thanks to cg-tespy
+- Option to grid snap blocks in the FlowchartWindow.
+- TMPro Text animation via link text.
+- Fungus Collection, varaibles, default types, and commands.
+- Github Issue and PR templates.
+
+## Fixed
+
+- Portrait image shown as white when cycled through rapidly.
+- Flowchart Window Search box steals focus
+- Mushroom icon placement incorrect on some versions of Unity. Thanks to TonyJeffree
+- Text and Background colour readability across Unity Versions and Pro skin. Thanks to DesperateHouseDev
+- VariableData indents incorrect.
+- Fix reshow of hidden portrait in Conversation. Thanks to jusw85
+- FlowchartWindow search pop not showing on newer Unity versions.
+- VS Solution file fix for Unity 2019.3.12
+- Inspector DeleteSave button now deletes now more aware of target platform.
+- Fungus VariableData single and mutliline variable drawing in more recent Unity versions.
+- Possible null ref in Conversation editor during variable match check
+- Block connections not drawing if origin block is not drawn.
+
+## Changed
+
+- Portraits are now all cached when requested under their own gameobjects and toggle active.
+- Fungus Docs moved to github wiki
+- JSONObject lib updated to newer version. Thanks to qrostar.
+- CameraManager and View now use Tween types.
+- Dragable EventHandlers now support an array of target dragables. Thanks to SarveshBajaj
+- Flowchart GetVariables by type. Thanks to cg-tespy
+- A null FungusVariables will now report their string value as Null instead of an empty string.
+- Develop updated to Unity 2019.3.13
+- Demo scenes rebuilt in minimum supported Unity version.
+- Block selector now orders blocks by name.
+- Block search now supports partial matches.
+- Update to c#4
+- Updates to Contributing, Code of Conduct.
+- Menu command has a button to add a block for it to target.
+- Character selector now sorts names.
+- Portrait selector now sorts names.
+- Update header license
+- Writer uses InvariantCulture when parsing floats to avoid unexpected behaviour under changing system cultures.
+
+v3.12.0
+======
+
+## Added
+
+- Search should search commands, not just block names (#775). Thanks to AcademyOfF
+- Debug additions (#777) righclicking context menus additions and improvements on commands, blocks, and variables
+- BlockCallers can be seen within the block inspector
+- Variable referencers can be seen logged to the console
+- Added a custom script importer for lua files. Thanks to Matthew Barnes
+- Added Asmdefs
+- Fungus Editor Prefs button to locate FungusEditorResources and changelog
+
+## Fixed
+
+- Defines and fallbacks for 2017 and 2018 (#781)
+- CommandListAdapter sync command selection bidirectionally with selection in underlying reorderablelist
+- Command text with 'Error:' shows red
+- HighSpeedWriterFix; corrected rate of characters and more than 1 character per frame issue.
+- FilterBlocks during SceneChange, now refresh as expected
+- Command and Variables outside of Fungus assembly now locate
+- Character selection preventing edits bug
+- Restore Edit Mode Tests
+
+## Changed
+
+- FungusManager.cs Use "double checked locking" algorithm to implement the singleton for "FungusManager" class, which can improve performance. Thanks to AndyHan1001 
+- CommandSearchHeightFallback on some versions of Unity editor inspector height is not returning correctly so we make an educated guess if it seems unreliable
+- More elaborated use of text in TMPro demo
+- Block Inspector forces type at creation. Thanks to Michaelwolf95
+- Warning when requesting menu elements that are not avaialble, such as more menu items that you have created.
+- Fungus Docs can now generate in github markdown format
+
 
 v3.11.5 {#v3.11.5}
 ======

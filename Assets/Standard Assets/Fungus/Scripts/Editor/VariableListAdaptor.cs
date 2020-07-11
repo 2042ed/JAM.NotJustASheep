@@ -1,12 +1,12 @@
-// This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
+// This code is part of the Fungus library (https://github.com/snozbot/fungus)
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
-
 
 using UnityEngine;
 using UnityEditor;
 using System;
 using UnityEditorInternal;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Fungus.EditorUtils
 {
@@ -32,7 +32,6 @@ namespace Fungus.EditorUtils
 
         private float[] itemWidths = new float[4];
         private Rect[] itemRects = new Rect[4];
-        private GUIContent emptyGUIContent = new GUIContent("");
 
         public SerializedProperty this[int index]
         {
@@ -45,6 +44,18 @@ namespace Fungus.EditorUtils
                 return list.list[index] as Variable;
             else
                 return this[index].objectReferenceValue as Variable;
+        }
+
+        public void SetVarAt(int index, Variable v)
+        {
+            if (list.list != null)
+            {
+                list.list[index] = v;
+            }
+            else
+            {
+                this[index].objectReferenceValue = v;
+            }
         }
 
         public VariableListAdaptor(SerializedProperty arrayProperty, Flowchart _targetFlowchart)
@@ -118,7 +129,7 @@ namespace Fungus.EditorUtils
 
                 _arrayProperty.serializedObject.Update();
                 this.widthOfList = (w == 0 ? VariableListAdaptor.DefaultWidth : w) - ScrollSpacer;
-                
+
                 int width = widthOfList;
                 int totalRatio = DefaultWidth;
 
@@ -150,6 +161,11 @@ namespace Fungus.EditorUtils
             if (variable == null)
             {
                 return;
+            }
+
+            if(Event.current.type == EventType.ContextClick && position.Contains(Event.current.mousePosition))
+            {
+                DoRightClickMenu(index);
             }
 
             for (int i = 0; i < 4; ++i)
@@ -232,7 +248,7 @@ namespace Fungus.EditorUtils
 
             bool isGlobal = scopeProp.enumValueIndex == (int)VariableScope.Global;
 
-
+            var prevEnabled = GUI.enabled;
             if (isGlobal && Application.isPlaying)
             {
                 var res = FungusManager.Instance.GlobalVariables.GetVariable(keyProp.stringValue);
@@ -241,18 +257,17 @@ namespace Fungus.EditorUtils
                     SerializedObject globalValue = new SerializedObject(res);
                     var globalValProp = globalValue.FindProperty("value");
 
-                    var prevEnabled = GUI.enabled;
+
                     GUI.enabled = false;
-
-                    EditorGUI.PropertyField(itemRects[2], globalValProp, emptyGUIContent);
-
-                    GUI.enabled = prevEnabled;
+                    defaultProp = globalValProp;
                 }
             }
-            else
-            {
-                EditorGUI.PropertyField(itemRects[2], defaultProp, emptyGUIContent);
-            }
+
+
+            //variable.DrawProperty(rects[2], defaultProp, variableInfo);
+            VariableDrawProperty(variable, itemRects[2], defaultProp, variableInfo);
+
+            GUI.enabled = prevEnabled;
 
 
             scope = (VariableScope)EditorGUI.EnumPopup(itemRects[3], variable.Scope);
@@ -261,6 +276,77 @@ namespace Fungus.EditorUtils
             variableObject.ApplyModifiedProperties();
 
             GUI.backgroundColor = Color.white;
+        }
+        
+        public static void VariableDrawProperty(Variable variable, Rect rect, SerializedProperty valueProp, VariableInfoAttribute info)
+        {
+            if (valueProp == null)
+            {
+                EditorGUI.LabelField(rect, "N/A");
+            }
+            else if (info.IsPreviewedOnly)
+            {
+                EditorGUI.LabelField(rect, variable.ToString());
+            }
+            else 
+            {
+                CustomVariableDrawerLookup.DrawCustomOrPropertyField(variable.GetType(), rect, valueProp, GUIContent.none);
+            }
+        }
+
+        private void DoRightClickMenu(int index)
+        {
+            var v = GetVarAt(index);
+
+            GenericMenu commandMenu = new GenericMenu();
+            commandMenu.AddItem(new GUIContent("Remove"), false, () => {list.index = index; RemoveItem(list); });
+            commandMenu.AddItem(new GUIContent("Duplicate"), false, () => VariableSelectPopupWindowContent.AddVariable(v.GetType(), v.Key));
+            commandMenu.AddItem(new GUIContent("Find References"), false, () => FindUsage(GetVarAt(index)));
+            commandMenu.AddSeparator("");
+            commandMenu.AddItem(new GUIContent("Sort by Name"), false, () => SortBy(x =>  x.Key));
+            commandMenu.AddItem(new GUIContent("Sort by Type"), false, () => SortBy(x => x.GetType().Name));
+            commandMenu.AddItem(new GUIContent("Sort by Value"), false, () => SortBy(x => x.GetValue()));
+            commandMenu.ShowAsContext();
+        }
+
+        private void SortBy<TKey>(Func<Variable, TKey> orderFunc)
+        {
+            List<Variable> vars = new List<Variable>();
+            for (int i = 0; i < list.count; i++)
+            {
+                vars.Add(GetVarAt(i));
+            }
+
+            vars = vars.OrderBy(orderFunc).ToList();
+
+            for (int i = 0; i < list.count; i++)
+            {
+                SetVarAt(i, vars[i]);
+            }
+
+            _arrayProperty.serializedObject.ApplyModifiedProperties();
+        }
+
+        private void FindUsage(Variable variable)
+        {                
+            var varRefs = EditorExtensions.FindObjectsOfInterface<IVariableReference>()
+                .Where(x => x.HasReference(variable))
+                .Select(x => x.GetLocationIdentifier()).ToArray(); ;
+
+            string varRefString = variable.Key;
+
+            if (varRefs != null && varRefs.Length > 0)
+            {
+                varRefString += " referenced in " + varRefs.Length.ToString() + " places:\n";
+
+                varRefString += string.Join("\n - ", varRefs);
+            }
+            else
+            {
+                varRefString += ", found no references.";
+            }
+
+            Debug.Log(varRefString);
         }
     }
 }

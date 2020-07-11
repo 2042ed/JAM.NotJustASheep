@@ -1,4 +1,4 @@
-// This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
+// This code is part of the Fungus library (https://github.com/snozbot/fungus)
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
@@ -93,11 +93,17 @@ namespace Fungus.EditorUtils
                 return;
             }
 
+            //if there is no selection but we are drawing, fix that
+            if (flowchart.SelectedBlocks.Count == 0)
+            {
+                flowchart.AddSelectedBlock(block);
+            }
+
             if (activeBlockEditor == null ||
                 !block.Equals(activeBlockEditor.target))
             {
                 DestroyImmediate(activeBlockEditor);
-                activeBlockEditor = Editor.CreateEditor(block) as BlockEditor;
+                activeBlockEditor = Editor.CreateEditor(block, typeof(BlockEditor)) as BlockEditor;
             }
 
             UpdateWindowHeight();

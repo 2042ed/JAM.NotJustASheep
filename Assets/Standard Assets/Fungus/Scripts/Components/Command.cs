@@ -1,4 +1,4 @@
-// This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
+// This code is part of the Fungus library (https://github.com/snozbot/fungus)
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
@@ -39,7 +39,7 @@ namespace Fungus
     /// <summary>
     /// Base class for Commands. Commands can be added to Blocks to create an execution sequence.
     /// </summary>
-    public abstract class Command : MonoBehaviour
+    public abstract class Command : MonoBehaviour, IVariableReference
     {
         [FormerlySerializedAs("commandId")]
         [HideInInspector]
@@ -228,6 +228,11 @@ namespace Fungus
             return false;
         }
 
+        public virtual string GetLocationIdentifier()
+        {
+            return ParentBlock.GetFlowchart().GetName() + ":" + ParentBlock.BlockName + "." + this.GetType().Name + "#" + CommandIndex.ToString(); 
+        }
+
         /// <summary>
         /// Called by unity when script is loaded or its data changed by editor
         /// </summary>
@@ -244,6 +249,14 @@ namespace Fungus
         public virtual string GetSummary()
         {
             return "";
+        }
+
+        /// <summary>
+        /// Returns the searchable content for searches on the flowchart window.
+        /// </summary>
+        public virtual string GetSearchableContent()
+        {
+            return GetSummary();
         }
 
         /// <summary>
@@ -316,7 +329,7 @@ namespace Fungus
             }
 
             return localizationId;
-        }
+        }        
 
         #endregion
     }
