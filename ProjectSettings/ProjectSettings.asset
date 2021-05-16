@@ -156,7 +156,7 @@ PlayerSettings:
     iPhone: 11
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 10001
+  AndroidBundleVersionCode: 1010200
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -243,7 +243,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: /Users/krur/Documents/Projects/JAM.NotJustASheep/App Assets/Android
-    Keystore/user.keystore
+    Keystore/notjustsheep.keystore
   AndroidKeyaliasName: jj.notjustsheep
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
