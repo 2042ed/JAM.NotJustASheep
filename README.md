@@ -10,12 +10,12 @@ full open source project under CC
 - Unity 3D (v 5.4)
 
 ## credits
-a **JAMURR - Kids Make Games** production ( http://jamurr.org ) 
+a **JAMURR - Kids Make Games** production ( https://2042ed.org/2042/jam/non-sono-solo-una-pecora/ ) 
 - Fabio "Lili" Cecere (game design, story, drawings, son)
 - Stefano "Cecio" Cecere (game dev, additional story, translations, music, dad)
 
 ## sources
-the sources of this game are here: https://github.com/JAMURR/JAM.NotJustASheep
+the sources of this game are here: https://github.com/2042ed/JAM.NotJustASheep
 
 ## contribute
 this game is under Attribution-Noncommercial-Share Alike Creative Commons License Creative.  
